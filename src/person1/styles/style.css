@@ -1,0 +1,1090 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+* body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  background-color: #e0e3e8;
+}
+* body .navbar {
+  width: 100%;
+  background-color: #fff;
+  height: 78px;
+  display: flex;
+  padding: 22px 95px;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+}
+
+* body .navbar img {
+  width: 90px;
+  height: 50px;
+}
+
+* body .navbar ul {
+  margin-left: 300px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+* body .navbar ul li {
+  text-decoration: none;
+  list-style: none;
+}
+* body .navbar ul li a {
+  text-decoration: none;
+  color: #7b92b5;
+  font-size: 14px;
+}
+* body .navbar .btns {
+  margin-left: 260px;
+}
+* body .navbar .btns button {
+  border: 1px solid #002F75;
+  border-radius: 10px;
+  color: #002F75;
+  padding: 8px 16px;
+}
+* body .navbar .btns button:hover {
+  cursor: pointer;
+}
+* body .navbar .btns .register {
+  background-color: #002F75;
+  color: #fff;
+  margin-left: 20px;
+}
+* body .navbar .btns .register .register:hover {
+  cursor: pointer;
+}
+
+* body .navbar .hello{
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+
+* body  .hiding_bar{
+  width: 300px;
+  height: 100vh;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  z-index: 30;
+}
+
+.hiding_bar ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  
+}
+
+.hiding_bar ul li{
+  color: #002F75;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+
+  border: 1px solid #002F75;
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  color: #002F75;
+  padding: 8px 16px;
+  cursor: pointer; 
+  transition: .3s;
+}
+
+.hiding_bar ul a{
+  color: #000;
+  text-decoration: none;
+}
+
+.hiding_bar .btns{
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+}
+
+.hiding_bar .btns button{
+  border: 1px solid #002F75;
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  color: #002F75;
+  padding: 8px 16px;
+  cursor: pointer; 
+  transition: .3s;
+}
+
+.hiding_bar .btns button:hover{
+  background-color: #003E9A;
+  color: #fff;
+}
+
+.hiding_bar .cancel{
+  width: auto;
+  height: auto;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 3%;
+  right: 3%;
+  border-radius: 50%;
+  padding: 10px;
+  transition: .3s;
+}
+
+.hiding_bar .cancel img{
+  width: 20px;
+  height: 20px;
+}
+
+.hiding_bar .cancel:hover{
+  background-color: #7b92b5;
+}
+
+* body .container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 80px;
+  align-items: center;
+  justify-content: space-around;
+}
+* body .container .suhbat {
+  margin-top: 110px;
+  margin-bottom: 30px;
+  width: 1200px;
+  height: 72px;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  color: #002F75;
+  align-items: center; }
+  * body .container .suhbat .search {
+    width: 224px;
+    height: 40px;
+    background-color: #ebebeb;
+    border-radius: 8px;
+    border: none;
+    display: flex; }
+    * body .container .suhbat .search button.search_btn{
+      border: none;
+      border-radius: 50%;
+      margin: 0 10px;
+      cursor: pointer;
+      display: flex;
+      width: 40px;
+      height: 40px;
+      justify-content: center;
+      align-items: center;
+      background-color: #ebebeb;
+    }
+    * body .container .suhbat .search button.search_btn img {
+      width: 18px;
+      height: 18px;
+      border-radius: 100%;
+      border: none; }
+    * body .container .suhbat .search input {
+      width: 200px;
+      border-radius: 8px;
+      background-color: #ebebeb;
+      border: none; }
+
+
+* body .container .darslar {
+  width: 1200px;
+  height: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+* body .container .darslar .dars {
+  width: 272px;
+  height: 221;
+  margin-left: 18px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+* body .container .darslar .dars img {
+  width: 265px;
+  height: 158px;
+  border-radius: 16px 16px 0 0;
+}
+
+.darslar a{
+  text-decoration: none;
+}
+* body .container .darslar .dars .content {
+  background-color: #fff;
+  width: 272px;
+  width: 265px;
+  height: 77px;
+  padding: 8px 24px;
+  margin-top: 0;
+  border-radius: 0 0 16px 16px;
+}
+* body .container .darslar .dars .content h3 {
+  color: #000;
+  font-size: 18px;
+}
+* body .container .darslar .dars .content p {
+  font-size: 12px;
+}
+
+
+* body .container .route {
+  width: 1200px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 16px;
+  padding: 10px;
+  background-color: #fff;
+  color: #002F75;
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+* body .container .route .page_lesson {
+  width: 269px;
+  height: 24px;
+  display: flex;
+  color: #002F75;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-around;
+}
+* body .container .route .page_lesson img {
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+}
+* body .container .route .page_lesson div {
+  margin-right: 10px;
+}
+* body .footer {
+  background-color: #1E1E1E;
+  width: 100%;
+  height: 334px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+* body .footer .logo1 {
+  width: 200;
+  height: 120;
+}
+* body .footer .logo1 img {
+  width: 200;
+  height: 120px;
+}
+* body .footer ul li {
+  display: inline;
+}
+* body .footer ul li a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
+  font-size: 14px;
+}
+* body .footer .social_links {
+  display: flex;
+  width: 38%;
+  overflow-y: hidden;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+}
+
+* body .footer .social_links a{
+  height: 20px;
+  overflow-y: hidden;
+}
+
+* body .footer .social_links img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+* body .footer .line {
+  width: 1272px;
+  height: 1px;
+  background-color: #fff;
+}
+* body .footer p {
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
+
+
+
+@media only screen and (max-width:1260px) {
+  *{
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  * body .navbar {
+    padding: 10px;
+  }
+
+  * body .navbar ul {
+    display: none;
+  }
+
+  * body .navbar ul li {
+    display: none;
+    margin-right: 10px;
+  }
+
+  * body .navbar ul li a {
+    display: none;
+    text-decoration: none;
+    color: #7b92b5;
+    font-size: 14px;
+  }
+
+  * body .navbar .btns {
+    display: none;
+  }
+
+  * body .navbar .btns .register {
+    background-color: #002F75;
+    color: #fff;
+    margin-left: 20px;
+  }
+
+  * body .navbar .btns .register .register:hover {
+    cursor: pointer;
+  }
+
+  /* ENDO OF NAVBAR */
+
+  * body .container{
+    padding: 0px;
+    height: auto;
+  }
+
+  /* Suhbat starts */
+  * body .container .suhbat {
+    margin-top: 120px;
+    width: 90%;
+    height: 45px;
+    margin-left: 0; }
+    * body .container .suhbat .search {
+      width: 104px;
+      height: 30px; }
+      * body .container .suhbat .search input {
+        width: 70px; }
+
+  /* Suhbat end */
+
+
+  * body .container .darslar {
+    display: grid;
+    width: 100%;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    z-index: 1;
+    height: 221;
+    margin-left: 40px;
+    margin-bottom: 0;
+  }
+  * body .container .darslar .dars {
+    margin-top: 20px;
+    margin-left: 37px;
+    width: 10 0%;
+  }
+
+
+
+  /* DARS ENDS */
+  
+  * body .container .route {
+    width: 50%;
+    height: 45px;
+  }
+
+  body .container .route p{
+    display: none;
+  }
+
+  * body .container .route .page_lesson {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  * body .footer {
+    background-color: #1E1E1E;
+    width: 100%;
+    height: 234px;
+    display: flex;
+    align-items: center;
+  }
+
+  * body .navbar .hello{
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+
+  * body .container .suhbat .search button.search_btn{
+    width: 30px;
+    height: 30px;
+  }
+/*# sourceMappingURL=style.css.map */
+  }
+
+
+  @media only screen and (max-width:971px) {
+    *{
+      box-sizing: border-box;
+      overflow-x: hidden;
+    }
+  
+    * body .navbar {
+      padding: 10px;
+    }
+  
+    * body .navbar ul {
+      display: none;
+    }
+  
+    * body .navbar ul li {
+      display: none;
+      margin-right: 10px;
+    }
+  
+    * body .navbar ul li a {
+      display: none;
+      text-decoration: none;
+      color: #7b92b5;
+      font-size: 14px;
+    }
+  
+    * body .navbar .btns {
+      display: none;
+    }
+  
+    * body .navbar .btns .register {
+      background-color: #002F75;
+      color: #fff;
+      margin-left: 20px;
+    }
+  
+    * body .navbar .btns .register .register:hover {
+      cursor: pointer;
+    }
+  
+    /* ENDO OF NAVBAR */
+  
+    * body .container{
+      padding: 0px;
+      height: auto;
+    }
+  
+    /* Suhbat starts */
+    * body .container .suhbat {
+      margin-top: 90px;
+      width: 90%;
+      height: 45px;
+      margin-left: 0; }
+      * body .container .suhbat .search {
+        width: 104px;
+        height: 30px; }
+        * body .container .suhbat .search input {
+          width: 70px; }
+  
+    /* Suhbat end */
+  
+  
+    * body .container .darslar {
+      display: grid;
+      width: 80%;
+      align-items: center;
+      grid-template-columns: auto auto ;
+      z-index: 1;
+      height: 221;
+      margin-left: 40px;
+      margin-bottom: 0;
+    }
+    * body .container .darslar .dars {
+      width: 90%;
+      margin-top: 20px;
+      margin-left: 0%;
+    }
+
+    * body .container .darslar .dars img{
+      width: 100%;
+    }
+
+    * body .container .darslar .dars .content{
+      width: 100%;
+    }
+  
+    /* DARS ENDS */
+    
+    * body .container .route {
+      width: 50%;
+      height: 45px;
+    }
+  
+    body .container .route p{
+      display: none;
+    }
+  
+    * body .container .route .page_lesson {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+    }
+  
+    * body .footer {
+      background-color: #1E1E1E;
+      width: 100%;
+      height: 234px;
+      display: flex;
+      align-items: center;
+    }
+  /*# sourceMappingURL=style.css.map */
+    }
+
+    @media only screen and (max-width:730px) {
+      *{
+        box-sizing: border-box;
+        overflow-x: hidden;
+      }
+    
+      * body .navbar {
+        padding: 10px;
+      }
+    
+      * body .navbar ul {
+        display: none;
+      }
+    
+      * body .navbar ul li {
+        display: none;
+        margin-right: 10px;
+      }
+    
+      * body .navbar ul li a {
+        display: none;
+        text-decoration: none;
+        color: #7b92b5;
+        font-size: 14px;
+      }
+    
+      * body .navbar .btns {
+        display: none;
+      }
+    
+      * body .navbar .btns .register {
+        background-color: #002F75;
+        color: #fff;
+        margin-left: 20px;
+      }
+    
+      * body .navbar .btns .register .register:hover {
+        cursor: pointer;
+      }
+    
+      /* ENDO OF NAVBAR */
+    
+      * body .container{
+        padding: 0px;
+        height: auto;
+      }
+    
+      /* Suhbat starts */
+      * body .container .suhbat {
+        margin-top: 90px;
+        width: 90%;
+        height: 45px;
+        margin-left: 0; }
+        * body .container .suhbat .search {
+          width: 104px;
+          height: 30px; }
+          * body .container .suhbat .search input {
+            width: 70px; }
+    
+      /* Suhbat end */
+    
+    
+      * body .container .darslar {
+        display: grid;
+        width: 90%;
+        align-items: center;
+        grid-template-columns: auto auto ;
+        z-index: 1;
+        height: 221;
+        margin-left: 40px;
+        margin-bottom: 0;
+      }
+      * body .container .darslar .dars {
+        width: 90%;
+        margin-top: 20px;
+        margin-left: 0%;
+      }
+  
+      * body .container .darslar .dars img{
+        width: 100%;
+      }
+  
+      * body .container .darslar .dars .content{
+        width: 100%;
+      }
+    
+      /* DARS ENDS */
+      
+      * body .container .route {
+        width: 50%;
+        height: 45px;
+      }
+    
+      body .container .route p{
+        display: none;
+      }
+    
+      * body .container .route .page_lesson {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+      }
+    
+      * body .footer {
+        background-color: #1E1E1E;
+        width: 100%;
+        height: 234px;
+        display: flex;
+        align-items: center;
+      }
+    /*# sourceMappingURL=style.css.map */
+      }
+
+
+      
+
+      @media only screen and (max-width:730px) {
+      *{
+        box-sizing: border-box;
+        overflow-x: hidden;
+      }
+    
+      * body .navbar {
+        padding: 10px;
+      }
+    
+      * body .navbar ul {
+        display: none;
+      }
+    
+      * body .navbar ul li {
+        display: none;
+        margin-right: 10px;
+      }
+    
+      * body .navbar ul li a {
+        display: none;
+        text-decoration: none;
+        color: #7b92b5;
+        font-size: 14px;
+      }
+    
+      * body .navbar .btns {
+        display: none;
+      }
+    
+      * body .navbar .btns .register {
+        background-color: #002F75;
+        color: #fff;
+        margin-left: 20px;
+      }
+    
+      * body .navbar .btns .register .register:hover {
+        cursor: pointer;
+      }
+    
+      /* ENDO OF NAVBAR */
+    
+      * body .container{
+        padding: 0px;
+        height: auto;
+      }
+    
+      /* Suhbat starts */
+      * body .container .suhbat {
+        margin-top: 90px;
+        width: 90%;
+        height: 45px;
+        margin-left: 0; }
+        * body .container .suhbat .search {
+          width: 104px;
+          height: 30px; }
+          * body .container .suhbat .search input {
+            width: 70px; }
+    
+      /* Suhbat end */
+    
+    
+      * body .container .darslar {
+        display: grid;
+        width: 90%;
+        align-items: center;
+        grid-template-columns: auto auto ;
+        z-index: 1;
+        height: 221;
+        margin-left: 40px;
+        margin-bottom: 0;
+      }
+      * body .container .darslar .dars {
+        width: 90%;
+        margin-top: 20px;
+        margin-left: 0%;
+      }
+  
+      * body .container .darslar .dars img{
+        width: 100%;
+      }
+  
+      * body .container .darslar .dars .content{
+        width: 100%;
+      }
+    
+      /* DARS ENDS */
+      
+      * body .container .route {
+        width: 50%;
+        height: 45px;
+      }
+    
+      body .container .route p{
+        display: none;
+      }
+    
+      * body .container .route .page_lesson {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+      }
+    
+      * body .footer {
+        background-color: #1E1E1E;
+        width: 100%;
+        height: 234px;
+        display: flex;
+        align-items: center;
+      }
+    /*# sourceMappingURL=style.css.map */
+      }
+
+
+      
+
+
+
+      @media only screen and (max-width:650px) {
+        *{
+          box-sizing: border-box;
+          overflow-x: hidden;
+        }
+      
+        * body .navbar {
+          padding: 10px;
+        }
+      
+        * body .navbar ul {
+          display: none;
+        }
+      
+        * body .navbar ul li {
+          display: none;
+          margin-right: 10px;
+        }
+      
+        * body .navbar ul li a {
+          display: none;
+          text-decoration: none;
+          color: #7b92b5;
+          font-size: 14px;
+        }
+      
+        * body .navbar .btns {
+          display: none;
+        }
+      
+        * body .navbar .btns .register {
+          background-color: #002F75;
+          color: #fff;
+          margin-left: 20px;
+        }
+      
+        * body .navbar .btns .register .register:hover {
+          cursor: pointer;
+        }
+      
+        /* ENDO OF NAVBAR */
+      
+        * body .container{
+          padding: 0px;
+          height: auto;
+        }
+      
+        /* Suhbat starts */
+        * body .container .suhbat {
+          margin-top: 90px;
+          width: 90%;
+          height: 45px;
+          margin-left: 0; }
+          * body .container .suhbat .search {
+            width: 104px;
+            height: 30px; }
+            * body .container .suhbat .search input {
+              width: 70px; }
+      
+        /* Suhbat end */
+      
+      
+        * body .container .darslar {
+          display: grid;
+          width: 100%;
+          align-items: center;
+          grid-template-columns: auto auto ;
+          z-index: 1;
+          height: 221;
+          margin-left: 40px;
+          margin-bottom: 0;
+        }
+        * body .container .darslar .dars {
+          width: 90%;
+          margin-top: 20px;
+          margin-left: 0%;
+        }
+    
+        * body .container .darslar .dars img{
+          width: 100%;
+        }
+    
+        * body .container .darslar .dars .content{
+          width: 100%;
+        }
+      
+        /* DARS ENDS */
+        
+        * body .container .route {
+          width: 50%;
+          height: 45px;
+        }
+      
+        body .container .route p{
+          display: none;
+        }
+      
+        * body .container .route .page_lesson {
+          width: 100%;
+          height: auto;
+          display: flex;
+          align-items: center;
+        }
+      
+        * body .footer {
+          background-color: #1E1E1E;
+          width: 100%;
+          height: 234px;
+          display: flex;
+          align-items: center;
+        }
+      /*# sourceMappingURL=style.css.map */
+        }
+
+
+        @media only screen and (max-width: 560px){
+          * body .container .darslar {
+            display: grid;
+            width: 70%;
+            align-items: center;
+            grid-template-columns: auto;
+            z-index: 1;
+            height: 221;
+            margin-left: 40px;
+            margin-bottom: 0;
+          }
+          * body .container .darslar .dars {
+            width: 90%;
+            margin-top: 20px;
+            margin-left: 0%;
+          }
+      
+        }
+  
+      
+
+
+    
+
+
+
+@media only screen and (max-width:375px) {
+  *{
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  * body .navbar {
+    padding: 10px;
+  }
+
+  * body .navbar ul {
+    display: none;
+  }
+
+  * body .navbar ul li {
+    display: none;
+    margin-right: 10px;
+  }
+
+  * body .navbar ul li a {
+    display: none;
+    text-decoration: none;
+    color: #7b92b5;
+    font-size: 14px;
+  }
+
+  * body .navbar .btns {
+    display: none;
+  }
+
+  * body .navbar .btns .register {
+    background-color: #002F75;
+    color: #fff;
+    margin-left: 20px;
+  }
+
+  * body .navbar .btns .register .register:hover {
+    cursor: pointer;
+  }
+
+  /* ENDO OF NAVBAR */
+
+  * body .container{
+    padding: 0px;
+    height: auto;
+  }
+
+  /* Suhbat starts */
+  * body .container .suhbat {
+    margin-top: 90px;
+    width: 90%;
+    height: 45px;
+    margin-left: 0; }
+    * body .container .suhbat .search {
+      width: 104px;
+      height: 30px; }
+      * body .container .suhbat .search input {
+        width: 70px; }
+
+  /* Suhbat end */
+
+
+  * body .container .darslar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    height: 221;
+    margin-left: 40px;
+    margin-bottom: 0;
+  }
+  * body .container .darslar .dars {
+    margin-top: 20px;
+  }
+
+  /* DARS ENDS */
+  
+  * body .container .route {
+    width: 90%;
+    height: 45px;
+  }
+
+  body .container .route p{
+    display: none;
+  }
+
+  * body .container .route .page_lesson {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  * body .footer {
+    background-color: #1E1E1E;
+    width: 100%;
+    height: 234px;
+    display: flex;
+    align-items: center;
+  }
+/*# sourceMappingURL=style.css.map */
+  
+
+  }
+  
+
+
+
