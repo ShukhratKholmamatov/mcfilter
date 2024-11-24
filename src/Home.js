@@ -1,10 +1,32 @@
 import github from './Imgs/github.png';
 import instagram from './Imgs/instagram.png';
 import telegram from './Imgs/telegram.png';
+import React, { useState, useEffect } from 'react';
 const Home = () => {
+    const [temperature, setTemperature] = useState('Loading...');
+  const city = 'Tashkent';
+
+  useEffect(() => {
+    const fetchWeather = async () => {
+      try {
+        const response = await fetch(`https://wttr.in/${city}?format=%t`);
+        const temp = await response.text();
+        setTemperature(`${city}, ${temp}`);
+      } catch (error) {
+        setTemperature('Error fetching data');
+        console.error('Error fetching weather data:', error);
+      }
+    };
+
+    fetchWeather();
+  }, []);
 
     return ( 
         <div className="home">
+             <div className="weather-block">
+                <p>{temperature}</p>
+            </div>
+
             <h1 className="font">Shukhrat <label id='word'>Kholmamatov</label></h1>
             <p>Undergraduate software engineer. Trying to bring brevity for every task and life.</p>
             <div className="social">
