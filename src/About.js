@@ -8,6 +8,7 @@ import playstation from './Imgs/playstation.jpg'
 import sahara from './Imgs/sahara.jpg'
 import buxoriy from './Imgs/buxoriy.jpg'
 import porj from './Imgs/porj.jpg'
+import news from './Imgs/news.jpg'
 
 const About = () => {
     return ( 
@@ -66,22 +67,26 @@ const About = () => {
                         <h2>Age calculator</h2>
                     </div>
 
+
                     <div className='project1'>
-                        <img src={po3} alt="" />
+                        <a href="https://joke-generator-i70n72cqn-shukhratkholmamatov.vercel.app/">
+                        <img src={po3} alt="https://joke-generator-i70n72cqn-shukhratkholmamatov.vercel.app/" />
+                        </a>
                         <h2>Joke geneartor</h2>
                     </div>
                 </div>
                 <div className='blocks'>
                     <div className='project'>
-                        <a href="https://age-calculator-sandy.vercel.app/">
+                        <a href="https://advice-generator-omega-eight.vercel.app/">
                         <img src={po4} alt="" />
                         </a>
-                        <h2>Joke generator</h2>
+                        <h2>Advice generator</h2>
                     </div>
 
                     <div className='project1'>
-                        <img src={po4} alt="" />
+                        <a href="https://responsive-news-homepage-beta.vercel.app/"><img src={news} alt="" />
                         <h2>News home page</h2>
+                        </a>
                     </div>
                 </div>
 
