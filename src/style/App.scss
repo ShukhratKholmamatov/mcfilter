@@ -318,11 +318,13 @@
 
                 @media (max-width: 400px) {
                     flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
                     margin: 8px;
                 }
 
                 .project{
-                    width: 375px;
+                    width: 360px;
                     height: auto;
                     animation: appear linear;
                     animation-timeline: view();
@@ -346,7 +348,7 @@
                     }
                 }
                 .project1{
-                    width: 375px;
+                    width: 360px;
                     height: auto;
                     animation: appear_r linear;
                     animation-timeline: view();
@@ -389,7 +391,7 @@
                 }
 
                 .project{
-                    width: 375px;
+                    width: 360px;
                     height: 300px;
                     animation: appear linear;
                     animation-timeline: view();
@@ -413,7 +415,7 @@
                     }
                 }
                 .project1{
-                    width: 375px;
+                    width: 360px;
                     height: 300px;
                     animation: appear_r linear;
                     animation-timeline: view();
